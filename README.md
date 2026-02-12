@@ -74,15 +74,33 @@ Foreign key relationships were leveraged to perform multi-table joins and revenu
 
 ## Repository Structure
 
-01_revenue_by_country.sql
-02_revenue_by_movie.sql
-03_zero_revenue_films.sql
-04_revenue_by_category.sql
-05_top_cities_within_top_countries.sql
-06_pricing_and_replacement_cost_stats.sql
-07_rental_duration_stats.sql
-08_customer_distribution_by_country.sql
-09_top_customers_by_revenue.sql
+- **01_revenue_by_country.sql**  
+  Revenue aggregated by country (geographic performance).
+
+- **02_revenue_by_movie.sql**  
+  Full revenue breakdown by film title.
+
+- **03_zero_revenue_films.sql**  
+  Identifies films that generated no revenue.
+
+- **04_revenue_by_category.sql**  
+  Revenue and rental count by film category.
+
+- **05_top_cities_within_top_countries.sql**  
+  Top-performing cities within the highest-revenue countries.
+
+- **06_pricing_and_replacement_cost_stats.sql**  
+  Rental rate and replacement cost summary statistics.
+
+- **07_rental_duration_stats.sql**  
+  Minimum, maximum, and average rental duration.
+
+- **08_customer_distribution_by_country.sql**  
+  Customer concentration by country.
+
+- **09_top_customers_by_revenue.sql**  
+  Highest-value customers by total payment amount.
+
 
 
 Each SQL file answers a specific business question and is formatted for clarity and reproducibility.
@@ -107,8 +125,6 @@ View the executive dashboard here:
 [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/joesie.toling/viz/RockbusterAnalytics_17652614019750/Story1)
 
 ---
-
-## Author
 
 ## Author
 

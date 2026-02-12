@@ -2,72 +2,119 @@
 
 ## Project Overview
 
-This project analyzes Rockbuster’s global film rental data to support strategic decision-making. The objective was to evaluate revenue performance, customer behavior, geographic distribution, and catalog effectiveness in order to identify growth opportunities and operational improvements.
-
+This project analyzes Rockbuster’s global film rental database using PostgreSQL to support strategic business decision-making.
+The analysis evaluates revenue performance, customer behavior, geographic distribution, film performance, and pricing stability to identify growth opportunities and operational improvements.
 Rockbuster operates in 108 countries, but revenue generation is concentrated within a smaller group of high-performing markets.
-
----
-
-## Business Questions
-
-This analysis addresses the following key management questions:
-
-- Which movies generate the most and least revenue?
-- What is the average rental duration across the catalog?
-- Where are Rockbuster customers located globally?
-- Which regions contain high-value customers?
-- How does revenue vary across geographic markets?
-- Which film categories contribute most to total revenue?
-- Are pricing, rental duration, and replacement costs stable?
-
----
-
-## Key Insights
-
-- Revenue is highly concentrated geographically. While Rockbuster serves customers in 108 countries, India, China, and the United States generate the largest share of total revenue.
-- Customer concentration does not always equal revenue dominance. Some regions with fewer customers produce strong revenue through higher spending behavior.
-- High-value customers are geographically dispersed across multiple countries and cities.
-- Film revenue is uneven across titles. A small number of films generate a disproportionate share of revenue, while a large portion of the catalog contributes little or none.
-- Revenue concentration varies significantly by film category. Sports, Sci-Fi, Animation, and Drama consistently generate higher total revenue.
-- Rental pricing, duration, and replacement cost metrics remain stable, supporting predictable revenue patterns.
-
----
-
-## Strategic Recommendations
-
-- Prioritize investment in high-revenue film categories.
-- Optimize the film catalog by reassessing low- and zero-revenue titles.
-- Leverage high-value customer insights for targeted engagement strategies.
-- Apply region- and category-specific marketing approaches.
-- Use data-driven insights to guide expansion into promising markets.
 
 ---
 
 ## Tools Used
 
-- PostgreSQL
-- pgAdmin 4
-- SQL (CTEs, joins, aggregation, filtering)
-- Tableau Public for visualization
+- PostgreSQL  
+- pgAdmin 4  
+- SQL (CTEs, joins, aggregation, filtering, window functions)  
+- Tableau Public (executive dashboard visualization)
+
+---
+
+## Dataset
+
+The relational database includes information on:
+
+- Films
+- Inventory
+- Rentals
+- Payments
+- Customers
+- Addresses
+- Cities
+- Countries
+- Film Categories
+
+Foreign key relationships were leveraged to perform multi-table joins and revenue aggregation across geographic and categorical dimensions.
+
+---
+
+## Key Business Questions
+
+- Which countries generate the highest revenue?
+- Which movies generate the most and least revenue?
+- Which film categories contribute most to total revenue?
+- Where are Rockbuster’s customers located globally?
+- Which cities within top countries contain the most customers?
+- Who are the top customers by total payment?
+- What is the average rental duration across the catalog?
+- Are rental rates and replacement costs stable?
+
+---
+
+## SQL Skills Demonstrated
+
+- Complex INNER JOIN and LEFT JOIN operations
+- Aggregation using SUM, COUNT, AVG
+- DISTINCT counting for customers and payments
+- GROUP BY with multi-level segmentation
+- HAVING filters for revenue qualification
+- Subqueries for geographic segmentation
+- Common Table Expressions (CTEs)
+- Window functions (DENSE_RANK)
+- Revenue concentration analysis
+
+---
+
+## Key Insights
+
+- Revenue is geographically concentrated. While Rockbuster serves customers in 108 countries, a small number of markets generate the majority of total revenue.
+- A limited number of films contribute disproportionately to total revenue, while many titles generate minimal or zero revenue.
+- High-value customers are distributed across multiple countries and cities.
+- Certain film categories consistently outperform others in total revenue contribution.
+- Rental duration, rental rates, and replacement costs remain stable, supporting predictable revenue patterns.
+
+---
+
+## Repository Structure
+
+01_revenue_by_country.sql
+02_revenue_by_movie.sql
+03_zero_revenue_films.sql
+04_revenue_by_category.sql
+05_top_cities_within_top_countries.sql
+06_pricing_and_replacement_cost_stats.sql
+07_rental_duration_stats.sql
+08_customer_distribution_by_country.sql
+09_top_customers_by_revenue.sql
+
+
+Each SQL file answers a specific business question and is formatted for clarity and reproducibility.
 
 ---
 
 ## Deliverables
 
-- Clean, well-formatted SQL queries addressing business requirements
-- Revenue and customer distribution analysis
-- Geographic revenue breakdown
+- Clean, production-ready SQL queries
+- Geographic revenue analysis
 - Film performance evaluation
-- Category revenue analysis
-- Pricing and rental duration assessment
-- Executive-level dashboard presentation
+- Category revenue breakdown
+- Customer distribution analysis
+- Executive-level interactive dashboard
 
 ---
 
 ## Interactive Dashboard
 
-[View Rockbuster Analytics on Tableau Public](https://public.tableau.com/app/profile/joesie.toling/viz/RockbusterAnalytics_17652614019750/Story1)
+View the executive dashboard here:
+
+[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/joesie.toling/viz/RockbusterAnalytics_17652614019750/Story1)
+
+---
+
+## Author
+
+## Author
+
+**Joesielyn Toling**  
+Data Analytics Portfolio Project  
+SQL • PostgreSQL • Tableau  
 
 
-
-
+SQL analysis and dashboard design completed as part of a Data Analytics portfolio project.
